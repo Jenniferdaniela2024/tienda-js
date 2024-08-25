@@ -1,0 +1,91 @@
+*{
+    
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    text-align: center;
+
+}
+.imagenes{
+    width: 200px;
+    margin-left: 20px;
+    
+}
+button{
+    background-color: #007BFF; /* Color de fondo azul */
+    color: white;              /* Color del texto blanco */
+    border: none;             /* Sin borde */
+    border-radius: 12px;      /* Bordes redondeados */
+    padding: 10px 20px;       /* Espaciado interno: 10px arriba/abajo, 20px izquierda/derecha */
+    font-size: 16px;          /* Tamaño de la fuente */
+    cursor: pointer;          /* Cursor de mano al pasar sobre el botón */
+    margin-left: 65px;
+}
+.descripcion{
+    color: #0c0c0c;
+}
+
+span{
+    color:rgb(34, 226, 50)
+}
+.producto{
+    border-style:groove;
+    width: 30%;
+    border-color: rgb(231, 229, 229);
+}
+.productos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los items se envuelvan a la siguiente línea */
+    gap: 20px; 
+}
+/* Estilos básicos para la factura */
+.factura {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.factura h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.factura h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.factura #total {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+h2{
+    color:#0f0f10;
+}
+a {text-decoration: none;
+color:#f9f5f5}
+
+header{
+    display: flex; /*Hace que los elemeetos se vean de una forma horizontal*/
+    justify-content:space-between ; /*ubica los elementos y space between para que uno este en la esquina*/
+    height: 75px;
+    background-color: #007BFF;
+    color: #f9f9f9;
+    align-items: center; /*centra los links*/
+    padding: 10px; /*para separar los elementos de su borde*/
+    margin-top: 0;
+}
+.des{
+    text-align: center;
+}
+.nombre{
+    text-align: center;
+}

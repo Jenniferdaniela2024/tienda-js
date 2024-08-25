@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Tienda  <i class="fa-solid fa-store"></i></h1>
+        </div>
+        <nav>
+            <ul>
+                <a href="#factura"><i class="fa-solid fa-file-invoice"></i> Ver factura</a><br>
+            </ul>
+        </nav>
+       </header>
+     <br><br>
+     <marquee>P R O D U C T O S <br> </marquee><br><br>
+    <div class="productos">
+        <!-- Producto 1: Leche date-precio para almacenar el precio de cada producto directamente en el atributo de cada botón -->
+        <div class="producto">
+            
+            
+            <img src="img/leche.jpeg" alt="leche" class="imagenes" ><br>
+           
+            <strong><p class="nombre" id="nombre">Leche Deslactosada</p></strong>
+            <div>
+                <p class="des">  Descripción del Producto:</p>
+                <span class="descripcion"></span>
+            </div>
+            <button class="btnCompra" data-producto="leche" data-precio="27600">Comprar</button>
+        </div>
+
+        <!-- Producto 2: Tortillas -->
+        <div class="producto">
+       
+            <img src="img/tortillas.jpeg" alt="tortillas" class="imagenes"><br>
+           
+            <strong><p class="nombre" id="nombre">Tortillas Clásicas</p></strong>
+            <div>
+                <p class="des">  Descripción del Producto:</p>
+                <span class="descripcion"></span>
+            </div>
+            <button class="btnCompra" data-producto="tortillas" data-precio="20000">Comprar</button>
+        </div>
+
+        <!-- Producto 3: Salchicha -->
+        <div class="producto">
+            <img src="img/salchichas.jpeg" alt="salchicha" class="imagenes"><br>
+            
+            <strong><p class="nombre" id="nombre">Salchichas Tradicionales</p></strong>
+            <div>
+                <p class="des">  Descripción del Producto:</p>
+                <span class="descripcion"></span>
+            </div>
+            <button class="btnCompra" data-producto="salchicha" data-precio="18000">Comprar</button>
+        </div>
+
+        <!-- Producto 4: Salsa -->
+        <div class="producto">
+         
+            <img src="img/salsa.jpeg" alt="salsa" class="imagenes"><br>
+            <strong><p class="nombre" id="nombre">Salsa de tomate</p></strong>
+            <div>
+                <p class="des">  Descripción del Producto:</p>
+                <span class="descripcion"></span>
+            </div>
+            <button class="btnCompra" data-producto="salsa" data-precio="11000">Comprar</button>
+        </div>
+
+        <!-- Producto 5: Arroz -->
+        <div class="producto">
+            
+            <img src="img/arroz.jpeg" alt="arroz" class="imagenes"><br>
+           
+            <div>
+                <strong><p class="nombre" id="nombre">Arroz Diana</p></strong>
+                <p class="des">  Descripción del Producto:</p>
+                <span class="descripcion"></span>
+            </div>
+            <button class="btnCompra" data-producto="arroz" data-precio="5000">Comprar</button>
+        </div>
+
+        <!-- Producto 6: Aceite -->
+        <div class="producto">
+          
+            <img src="img/aceite.jpeg" alt="aceite" class="imagenes"><br>
+            
+            <div>
+                <strong><p class="nombre" id="nombre">Aceite Vegetal</p></strong>
+                <p class="des">  Descripción del Producto:</p>
+                <span class="descripcion"></span>
+            </div>
+            <button class="btnCompra" data-producto="aceite" data-precio="8000">Comprar</button>
+        </div>
+
+        <!-- Producto 7: Mantequilla -->
+        <div class="producto">
+            <img src="img/mantequilla.jpeg" alt="mantequilla" class="imagenes"><br>
+            
+           <strong><p class="nombre" id="nombre">Mantequilla Rama</p></strong>
+            <div>
+                <p class="des">  Descripción del Producto:</p>
+                <span class="descripcion"></span>
+            </div>
+            <button class="btnCompra" data-producto="mantequilla" data-precio="12000">Comprar</button>
+        </div>
+
+        <!-- Producto 8: Queso -->
+        <div class="producto">
+
+            <img src="img/queso.jpeg" alt="queso" class="imagenes"><br>
+            
+           <strong><p class="nombre" id="nombre">Queso Mozarella</p></strong>
+            <div>
+                <p class="des">  Descripción del Producto:</p>
+                <span class="descripcion"></span>
+            </div>
+            <button class="btnCompra" data-producto="aceite" data-precio="8000">Comprar</button>
+        </div>
+    </div>
+
+    <!-- Elemento para mostrar el total -->
+    <div class="factura" id="factura">
+       <strong><p>Factura</p></strong> 
+        <p>Total de compras:</p>
+        <span id="total">0</span>
+
+        
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
